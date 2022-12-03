@@ -57,7 +57,7 @@ html{
     transition: .3s ease;
 }
 #navbar li a:hover,#navbar li a.active{
-    color: #ff0000;
+    color:  rgb(255, 0, 0);
 }
 #navbar li a.active::after,
 #navbar li a:hover::after
@@ -65,7 +65,7 @@ html{
     content: "";
     width: 30%;
     height: 2px;
-    background-color: #ff0000;
+    background-color:  rgb(255, 0, 0);
     position: absolute;
     bottom: -4px;
     left: 30px
@@ -80,7 +80,7 @@ a#logo {
 a#logo h1{
     color: black;
 }
-.body{
+#body{
     background-image: url("../img/background-img.png");
     background-size: cover;
     height: 100vh;
@@ -103,7 +103,7 @@ p{
     padding-bottom: 15px;
     padding-left: 1px;
 }
-body button{
+#body button{
     background-image: url("../img/button.png");
     background-color: transparent;
     border: none;
@@ -115,8 +115,13 @@ body button{
     font-weight: bold;
     margin-left: -12px;
     margin-top: 10px;
+    transition: transform 0.25s;
+    overflow: hidden;
+}
+#body button:hover{
+    transform: scale(1.1);
 }
 .p-red{
-    color: #ff0000;
-     font-weight: 500; 
+    color:  rgb(255, 0, 0);
+     font-weight: 600; 
 }
