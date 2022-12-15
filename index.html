@@ -14,19 +14,91 @@
         </div>
         <div>
             <ul id="navbar">
-                <li><a href="index.html" class = "active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skill.html">Skills</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="work.html">Works</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
     <section id="body">
         <h1 class ="h1-tag">Hello My Name is Basu Thapa</h1>
         <p class ="p-red">Front-end Developer</p>
-        <button>Contact me</button>
+        <button>Download CV</button>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/about-1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempora iusto quisquam commodi praesentium, delectus hic enim veritatis nulla fugiat aliquam voluptatem perferendis minus? Eum aliquam sint corrupti totam. Odit! lorem</p>
+                    <div class="tab-titles">
+                    
+                    <p class="table-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="table-links" onclick="openTab('experience')">Experience</p>
+                    <p class="table-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class ="about-me-container">
+                    
+                
+                <div class="tab-contents active-tab" id = "skills">
+                    <div class="skills-container">
+                        <div class="bars">
+                            <div class="bars-box">
+                               
+                                <h3>HTML</h3>
+                                <span>80%</span>
+                                <div class= "light-bar">
+                            </div>
+                            <div class="percent-bar html-bar">
+
+                            </div>
+                        </div>
+                        <div class="bars-box">
+                            <h3>CSS</h3>
+                            <span>70%</span>
+                            <div class= "light-bar">
+                        </div>
+                        <div class="percent-bar css-bar"></div>
+                    </div>
+                    <div class="bars-box">
+                        <h3>Javascript</h3>
+                        <span>60%</span>
+                        <div class= "light-bar">
+                    </div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>0%</span>
+                    <div class= "light-bar">
+                </div>
+                <div class="percent-bar react-bar"></div>
+            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br> Exxperience topic 1 </li>
+                        <li><span> 2020 - 2022 </span><br> Experience topic 2 </li> 
+                        <li><span> 2019 - 2020 </span><br>Experience topic 3</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Student at Infomax College of IT and Management </li>
+                        <li><span>2020 - 2022 </span><br>+2 at Motherland Secondary School </li>
+                        <li><span>SEE - 2020 </span><br>Gurukul Bidhya Sadan </li>
+                    </ul>
+                </div>
+</div>
+            </div>
+        </div>
     </section>
     <script src = "js/index.js"></script>
 </body>

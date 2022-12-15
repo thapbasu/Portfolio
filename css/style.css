@@ -107,7 +107,7 @@ p{
     background-image: url("../img/button.png");
     background-color: transparent;
     border: none;
-    padding: 14px 80px 14px 65px;
+    padding: 14px 80px 14px 55px;
     background-repeat: no-repeat;
     cursor: pointer;
     font-weight: 700;
@@ -124,4 +124,119 @@ p{
 .p-red{
     color:  rgb(255, 0, 0);
      font-weight: 600; 
+}
+
+
+/* About */
+
+#about{
+    padding: 80px 80px;
+    color: #000;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.table-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #000;
+}
+.table-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color:  rgb(255, 0, 0);
+    position: absolute;
+    left: 2px;
+    bottom:8px;
+    transition: 0.5s
+}
+.table-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color:  rgb(255, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.about-me-container{
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.bars-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+
+}
+.light-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.6rem;
+    background: hsla(260, 100%, 44%, 0.4);
+    border-radius: 0.5rem;
+}
+.percent-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.6rem;
+    background-color: red;
+    border-radius: 0.6rem;
+}
+.html-bar{
+    width: 80%;
+}
+.css-bar{
+    width: 70%;
+}
+.js-bar{
+    width: 60%;
+}
+.react-bar{
+    width: 0%;
 }
